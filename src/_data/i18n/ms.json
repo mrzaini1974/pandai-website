@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "siteName": "PANDAI",
+    "tagline": "Peduli • Rahmah • Inklusi",
+    "desc": "Pertubuhan Amal & Da'wah Anak Istimewa (PANDAI) — NGO Islam berdaftar yang memperkasa anak istimewa, keluarga dan komuniti melalui rahmah, ilmu dan dakwah."
+  },
+  "a11y": {
+    "skipLink": "Langkau ke kandungan utama",
+    "widgetOpen": "Buka menu kebolehcapaian",
+    "widgetTitle": "Menu Kebolehcapaian",
+    "fontSize": "Saiz Teks",
+    "increase": "Besarkan teks",
+    "decrease": "Kecilkan teks",
+    "highContrast": "Kontras Tinggi",
+    "dyslexiaFont": "Fon Mesra Disleksia",
+    "highlightLinks": "Serlahkan Pautan",
+    "readingGuide": "Panduan Bacaan",
+    "pauseMotion": "Hentikan Animasi",
+    "textSpacing": "Jarak Teks Luas",
+    "resetAll": "Set Semula Semua",
+    "close": "Tutup menu kebolehcapaian",
+    "langMenu": "Pilih bahasa"
+  },
+  "nav": {
+    "home": "Utama",
+    "about": "Tentang Kami",
+    "programs": "Program",
+    "autism": "Pusat Autisme MAIWP",
+    "news": "Berita",
+    "gallery": "Galeri",
+    "calendar": "Kalendar",
+    "donate": "Derma",
+    "contact": "Hubungi",
+    "menu": "Menu",
+    "mainNav": "Navigasi utama"
+  },
+  "home": {
+    "heroKicker": "NGO Islam Berdaftar • PPM-026-14-26062018",
+    "heroTitle": "Menyantuni Anak Istimewa dengan Rahmah, Ilmu dan Dakwah",
+    "heroLead": "Anak istimewa dan keluarga memerlukan sokongan yang tersusun, mesra dan berterusan. PANDAI hadir membina ekosistem sokongan itu — bersama keluarga, komuniti dan institusi.",
+    "ctaDonate": "Salurkan Sumbangan",
+    "ctaPrograms": "Lihat Program Kami",
+    "introTitle": "Siapa Kami",
+    "introText": "Pertubuhan Amal & Da'wah Anak Istimewa (PANDAI) ialah NGO Islam berdaftar sejak 26 Jun 2018 di bawah kategori kebajikan (sub-kategori OKU). Kami memberi fokus kepada bidang yang paling dekat dengan keperluan sebenar anak istimewa dan keluarga mereka.",
+    "focusTitle": "Fokus Utama",
+    "focusLead": "Setiap fokus saling melengkapi untuk membina ekosistem sokongan yang lebih menyeluruh.",
+    "focus": [
+      { "title": "Sokongan Keluarga", "desc": "Bimbingan, sokongan emosi dan jaringan komuniti ibu bapa." },
+      { "title": "Pendidikan & Kesedaran", "desc": "Perkongsian ilmu, latihan dan advokasi kepada masyarakat." },
+      { "title": "Program Islamik Mesra Anak Istimewa", "desc": "Aktiviti yang membantu anak mendekati ibadah, adab dan suasana rahmah." },
+      { "title": "Komuniti & Sukarelawan", "desc": "Menggerakkan penglibatan masyarakat, relawan dan rakan strategik." }
+    ],
+    "autismTitle": "Pusat Autisme MAIWP",
+    "autismLead": "PANDAI telah dilantik sebagai operator bagi operasi Pusat Autisme MAIWP — sebuah inisiatif untuk menyantuni anak-anak autisme dan keluarga mereka secara profesional dan berrahmah.",
+    "autismCta": "Ketahui Lebih Lanjut",
+    "newsTitle": "Berita Terkini",
+    "newsAll": "Lihat Semua Berita",
+    "eventsTitle": "Aktiviti Akan Datang",
+    "eventsAll": "Lihat Kalendar Penuh",
+    "valuesTitle": "5 Nilai Teras Kami",
+    "values": [
+      { "name": "Rahmah", "desc": "Menyantuni dengan kasih, hikmah dan empati." },
+      { "name": "Inklusi", "desc": "Membuka ruang yang lebih mesra dan menerima." },
+      { "name": "Ilmu", "desc": "Membawa kefahaman yang benar dan bermanfaat." },
+      { "name": "Digniti", "desc": "Memuliakan maruah setiap insan." },
+      { "name": "Dakwah", "desc": "Menghubungkan masyarakat dengan nilai Islam." }
+    ]
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "lead": "NGO Islam berdaftar pada 26 Jun 2018, kategori kebajikan sub-kategori OKU.",
+    "missionTitle": "Misi Kami",
+    "missionText": "Membina sokongan berteraskan rahmah, ilmu dan dakwah untuk memperkasa anak istimewa, keluarga dan komuniti.",
+    "issueTitle": "Isu & Keperluan",
+    "issueLead": "Anak istimewa dan keluarga memerlukan sokongan yang lebih tersusun, mesra dan berterusan.",
+    "issues": [
+      { "title": "Ibu Bapa Perlukan Bimbingan", "desc": "Maklumat, emosi dan panduan praktikal sering diperlukan dalam perjalanan membesarkan anak istimewa." },
+      { "title": "Masyarakat Perlukan Kefahaman", "desc": "Kesedaran dan adab berinteraksi perlu diperkukuh agar komuniti lebih empati dan inklusif." },
+      { "title": "Ruang Ibadah Perlu Mesra Inklusi", "desc": "Masjid dan surau perlu lebih bersedia menyantuni anak istimewa serta keluarga mereka." }
+    ],
+    "issueOutro": "Keperluan ini menuntut sinergi antara keluarga, komuniti, institusi dan sokongan dakwah.",
+    "modelTitle": "Model Pendekatan: Aql, Nafs, Qalb, Ruh",
+    "modelLead": "Pendekatan kami melihat anak istimewa secara menyeluruh — minda, tingkah laku, emosi dan rohani. Model ini membantu membentuk intervensi yang lebih seimbang dan berrahmah.",
+    "model": [
+      { "name": "Aql", "desc": "Minda: kefahaman, pembelajaran dan potensi." },
+      { "name": "Nafs", "desc": "Tingkah laku: disiplin, rutin dan pengurusan diri." },
+      { "name": "Qalb", "desc": "Emosi: rasa aman, hubungan dan kesejahteraan." },
+      { "name": "Ruh", "desc": "Rohani: nilai, ibadah, doa dan makna kehidupan." }
+    ],
+    "valuesTitle": "Nilai Teras",
+    "valuesOutro": "Nilai inilah yang membimbing setiap inisiatif dan kerjasama kami.",
+    "regTitle": "Maklumat Pendaftaran",
+    "regLabel": "No. Pendaftaran",
+    "regDate": "Tarikh Daftar: 26 Jun 2018",
+    "regCategory": "Kategori: Kebajikan (sub-kategori OKU)"
+  },
+  "programs": {
+    "title": "Program & Aktiviti",
+    "lead": "Program kami dirancang untuk menyantuni anak istimewa, keluarga dan komuniti secara praktikal dan berterusan.",
+    "items": [
+      { "title": "Kelas Anak Istimewa", "desc": "Aktiviti pembelajaran, adab dan pengukuhan diri untuk anak-anak istimewa dalam suasana yang selamat dan mesra." },
+      { "title": "Sokongan Ibu Bapa", "desc": "Ruang bimbingan, perkongsian pengalaman dan komuniti sokongan untuk ibu bapa dan penjaga." },
+      { "title": "Ceramah & Kesedaran", "desc": "Pendidikan awam ke arah empati dan kefahaman terhadap anak istimewa." },
+      { "title": "Ziarah Kasih", "desc": "Mendekati keluarga anak istimewa dengan sokongan dan keprihatinan di rumah mereka." },
+      { "title": "Sukarelawan", "desc": "Menggerakkan tenaga relawan untuk khidmat yang bermakna kepada komuniti." },
+      { "title": "Kolaborasi Masjid & Surau", "desc": "Menghidupkan ruang ibadah yang lebih mesra inklusi untuk anak istimewa dan keluarga." }
+    ],
+    "outro": "Program disusun mengikut keperluan lapangan dan semangat khidmat.",
+    "joinTitle": "Ingin Menyertai Program Kami?",
+    "joinText": "Hubungi kami untuk maklumat pendaftaran program atau menjadi sukarelawan.",
+    "joinCta": "Hubungi Kami"
+  },
+  "autism": {
+    "title": "Pusat Autisme MAIWP",
+    "lead": "PANDAI telah dilantik sebagai operator bagi operasi Pusat Autisme MAIWP.",
+    "aboutTitle": "Mengenai Pusat",
+    "aboutText": "Pusat Autisme MAIWP ialah inisiatif Majlis Agama Islam Wilayah Persekutuan (MAIWP) untuk menyediakan perkhidmatan sokongan kepada anak-anak autisme dan keluarga mereka. Sebagai operator yang dilantik, PANDAI bertanggungjawab menguruskan operasi harian pusat ini dengan pendekatan profesional dan berrahmah.",
+    "roleTitle": "Peranan PANDAI",
+    "roleText": "Sebagai operator, PANDAI membawa pengalaman bertahun-tahun menyantuni anak istimewa ke dalam pengurusan pusat — daripada program intervensi, sokongan keluarga, hinggalah latihan tenaga kerja dan kesedaran komuniti.",
+    "servicesTitle": "Fokus Perkhidmatan",
+    "services": [
+      { "title": "Program Intervensi", "desc": "Aktiviti berstruktur untuk perkembangan anak autisme mengikut keperluan individu." },
+      { "title": "Sokongan Keluarga", "desc": "Bimbingan dan ruang sokongan untuk ibu bapa dan penjaga anak autisme." },
+      { "title": "Pendekatan Islamik", "desc": "Pembelajaran ibadah, adab dan nilai murni yang disesuaikan dengan keperluan anak autisme." },
+      { "title": "Kesedaran Komuniti", "desc": "Program advokasi dan latihan untuk masyarakat memahami autisme dengan lebih baik." }
+    ],
+    "visitTitle": "Hubungi & Pertanyaan",
+    "visitText": "Untuk pertanyaan mengenai perkhidmatan, pendaftaran atau lawatan ke Pusat Autisme MAIWP, sila hubungi kami.",
+    "visitCta": "Hubungi Kami"
+  },
+  "news": {
+    "title": "Berita & Aktiviti",
+    "lead": "Ikuti perkembangan terkini program dan aktiviti PANDAI.",
+    "empty": "Tiada berita buat masa ini. Sila kunjungi semula nanti.",
+    "readMore": "Baca Lanjut",
+    "publishedOn": "Diterbitkan pada",
+    "backToNews": "Kembali ke Berita"
+  },
+  "gallery": {
+    "title": "Galeri",
+    "lead": "Detik-detik bermakna dari program dan aktiviti kami.",
+    "empty": "Tiada album buat masa ini.",
+    "photos": "gambar",
+    "viewAlbum": "Lihat album"
+  },
+  "calendar": {
+    "title": "Kalendar Aktiviti",
+    "lead": "Program dan aktiviti yang akan datang.",
+    "upcomingTitle": "Akan Datang",
+    "pastTitle": "Aktiviti Lepas",
+    "empty": "Tiada aktiviti dijadualkan buat masa ini.",
+    "location": "Lokasi",
+    "date": "Tarikh"
+  },
+  "donate": {
+    "title": "Salurkan Sumbangan",
+    "lead": "Setiap sumbangan anda membantu kami menyantuni anak istimewa dan keluarga mereka secara berterusan.",
+    "bankTitle": "Maklumat Perbankan",
+    "bankLabel": "Bank",
+    "accountLabel": "No. Akaun",
+    "holderLabel": "Nama Akaun",
+    "copyBtn": "Salin No. Akaun",
+    "copied": "Disalin!",
+    "noteTitle": "Makluman",
+    "noteText": "Selepas membuat sumbangan, anda boleh menghantar bukti pembayaran ke e-mel kami untuk tujuan rekod. Semoga Allah membalas kemurahan hati anda.",
+    "usageTitle": "Ke Mana Sumbangan Anda Pergi",
+    "usage": [
+      { "title": "Program Anak Istimewa", "desc": "Kelas, aktiviti dan bahan pembelajaran untuk anak-anak istimewa." },
+      { "title": "Sokongan Keluarga", "desc": "Program bimbingan dan ziarah kasih kepada keluarga memerlukan." },
+      { "title": "Operasi & Kesedaran", "desc": "Menggerakkan sukarelawan dan program kesedaran komuniti." }
+    ]
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "lead": "Ada pertanyaan mengenai program, sukarelawan atau Pusat Autisme MAIWP? Kami sedia membantu.",
+    "formTitle": "Hantar Mesej",
+    "formName": "Nama Penuh",
+    "formEmail": "Alamat E-mel",
+    "formPhone": "No. Telefon (pilihan)",
+    "formSubject": "Perkara",
+    "subjects": ["Pertanyaan Umum", "Pendaftaran Program", "Sukarelawan", "Pusat Autisme MAIWP", "Sumbangan & Derma"],
+    "formMessage": "Mesej Anda",
+    "formSubmit": "Hantar Mesej",
+    "requiredNote": "Medan bertanda * adalah wajib diisi.",
+    "infoTitle": "Maklumat Perhubungan",
+    "addressTitle": "Alamat",
+    "phoneTitle": "Telefon",
+    "emailTitle": "E-mel",
+    "socialTitle": "Media Sosial"
+  },
+  "footer": {
+    "aboutText": "NGO Islam berdaftar yang memperkasa anak istimewa, keluarga dan komuniti melalui rahmah, ilmu dan dakwah.",
+    "quickLinks": "Pautan Pantas",
+    "contactTitle": "Hubungi",
+    "followUs": "Ikuti Kami",
+    "regLabel": "No. Pendaftaran",
+    "rights": "Hak cipta terpelihara.",
+    "a11yNote": "Laman web ini dibina mematuhi garis panduan kebolehcapaian WCAG 2.1 Tahap AA."
+  },
+  "misc": {
+    "learnMore": "Ketahui Lebih Lanjut",
+    "backHome": "Kembali ke Laman Utama"
+  }
+}

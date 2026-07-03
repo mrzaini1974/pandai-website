@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "siteName": "PANDAI",
+    "tagline": "Care • Compassion • Inclusion",
+    "desc": "Pertubuhan Amal & Da'wah Anak Istimewa (PANDAI) — a registered Islamic NGO empowering special-needs children, families and communities through compassion, knowledge and da'wah."
+  },
+  "a11y": {
+    "skipLink": "Skip to main content",
+    "widgetOpen": "Open accessibility menu",
+    "widgetTitle": "Accessibility Menu",
+    "fontSize": "Text Size",
+    "increase": "Increase text size",
+    "decrease": "Decrease text size",
+    "highContrast": "High Contrast",
+    "dyslexiaFont": "Dyslexia-Friendly Font",
+    "highlightLinks": "Highlight Links",
+    "readingGuide": "Reading Guide",
+    "pauseMotion": "Pause Animations",
+    "textSpacing": "Wide Text Spacing",
+    "resetAll": "Reset All",
+    "close": "Close accessibility menu",
+    "langMenu": "Choose language"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programmes",
+    "autism": "MAIWP Autism Centre",
+    "news": "News",
+    "gallery": "Gallery",
+    "calendar": "Calendar",
+    "donate": "Donate",
+    "contact": "Contact",
+    "menu": "Menu",
+    "mainNav": "Main navigation"
+  },
+  "home": {
+    "heroKicker": "Registered Islamic NGO • PPM-026-14-26062018",
+    "heroTitle": "Caring for Special-Needs Children with Compassion, Knowledge and Da'wah",
+    "heroLead": "Special-needs children and their families need structured, friendly and continuous support. PANDAI builds that ecosystem of support — together with families, communities and institutions.",
+    "ctaDonate": "Make a Donation",
+    "ctaPrograms": "See Our Programmes",
+    "introTitle": "Who We Are",
+    "introText": "Pertubuhan Amal & Da'wah Anak Istimewa (PANDAI) is an Islamic NGO registered since 26 June 2018 under the welfare category (disability sub-category). We focus on the areas closest to the real needs of special-needs children and their families.",
+    "focusTitle": "Our Key Focus",
+    "focusLead": "Each focus area complements the others to build a more complete ecosystem of support.",
+    "focus": [
+      { "title": "Family Support", "desc": "Guidance, emotional support and a community network for parents." },
+      { "title": "Education & Awareness", "desc": "Knowledge sharing, training and advocacy for the wider public." },
+      { "title": "Special-Needs-Friendly Islamic Programmes", "desc": "Activities that bring children closer to worship, good character and a compassionate environment." },
+      { "title": "Community & Volunteers", "desc": "Mobilising community involvement, volunteers and strategic partners." }
+    ],
+    "autismTitle": "MAIWP Autism Centre",
+    "autismLead": "PANDAI has been appointed as the operator of the MAIWP Autism Centre — an initiative to serve autistic children and their families professionally and compassionately.",
+    "autismCta": "Learn More",
+    "newsTitle": "Latest News",
+    "newsAll": "View All News",
+    "eventsTitle": "Upcoming Activities",
+    "eventsAll": "View Full Calendar",
+    "valuesTitle": "Our 5 Core Values",
+    "values": [
+      { "name": "Rahmah", "desc": "Caring with love, wisdom and empathy." },
+      { "name": "Inclusion", "desc": "Opening spaces that are welcoming and accepting." },
+      { "name": "Knowledge", "desc": "Bringing true and beneficial understanding." },
+      { "name": "Dignity", "desc": "Honouring the dignity of every person." },
+      { "name": "Da'wah", "desc": "Connecting society with Islamic values." }
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "lead": "A registered Islamic NGO since 26 June 2018, welfare category (disability sub-category).",
+    "missionTitle": "Our Mission",
+    "missionText": "To build support grounded in compassion, knowledge and da'wah to empower special-needs children, families and communities.",
+    "issueTitle": "Issues & Needs",
+    "issueLead": "Special-needs children and their families need support that is more structured, friendly and continuous.",
+    "issues": [
+      { "title": "Parents Need Guidance", "desc": "Information, emotional support and practical guidance are often needed in the journey of raising a special-needs child." },
+      { "title": "Society Needs Understanding", "desc": "Awareness and proper etiquette in interaction must be strengthened so communities become more empathetic and inclusive." },
+      { "title": "Places of Worship Must Be Inclusive", "desc": "Mosques and suraus need to be better prepared to welcome special-needs children and their families." }
+    ],
+    "issueOutro": "These needs call for synergy between families, communities, institutions and da'wah support.",
+    "modelTitle": "Our Approach: Aql, Nafs, Qalb, Ruh",
+    "modelLead": "Our approach sees the special-needs child as a whole — mind, behaviour, emotions and spirit. This model helps shape interventions that are balanced and compassionate.",
+    "model": [
+      { "name": "Aql", "desc": "Mind: understanding, learning and potential." },
+      { "name": "Nafs", "desc": "Behaviour: discipline, routine and self-management." },
+      { "name": "Qalb", "desc": "Emotions: a sense of safety, relationships and wellbeing." },
+      { "name": "Ruh", "desc": "Spirit: values, worship, prayer and meaning in life." }
+    ],
+    "valuesTitle": "Core Values",
+    "valuesOutro": "These values guide every initiative and collaboration we undertake.",
+    "regTitle": "Registration Details",
+    "regLabel": "Registration No.",
+    "regDate": "Registered: 26 June 2018",
+    "regCategory": "Category: Welfare (disability sub-category)"
+  },
+  "programs": {
+    "title": "Programmes & Activities",
+    "lead": "Our programmes are designed to serve special-needs children, families and communities in practical and continuous ways.",
+    "items": [
+      { "title": "Special-Needs Classes", "desc": "Learning activities, character building and self-development for special-needs children in a safe, friendly environment." },
+      { "title": "Parent Support", "desc": "Guidance, shared experiences and a supportive community for parents and caregivers." },
+      { "title": "Talks & Awareness", "desc": "Public education towards empathy and understanding of special-needs children." },
+      { "title": "Ziarah Kasih (Care Visits)", "desc": "Reaching out to families of special-needs children with support and care at their homes." },
+      { "title": "Volunteering", "desc": "Mobilising volunteers for meaningful service to the community." },
+      { "title": "Mosque & Surau Collaboration", "desc": "Making places of worship more inclusive and welcoming for special-needs children and families." }
+    ],
+    "outro": "Programmes are shaped by real needs on the ground and a spirit of service.",
+    "joinTitle": "Want to Join Our Programmes?",
+    "joinText": "Contact us for programme registration or to become a volunteer.",
+    "joinCta": "Contact Us"
+  },
+  "autism": {
+    "title": "MAIWP Autism Centre",
+    "lead": "PANDAI has been appointed as the operator of the MAIWP Autism Centre.",
+    "aboutTitle": "About the Centre",
+    "aboutText": "The MAIWP Autism Centre is an initiative of the Federal Territories Islamic Religious Council (MAIWP) to provide support services for autistic children and their families. As the appointed operator, PANDAI is responsible for the centre's daily operations with a professional and compassionate approach.",
+    "roleTitle": "PANDAI's Role",
+    "roleText": "As operator, PANDAI brings years of experience serving special-needs children into the management of the centre — from intervention programmes and family support to staff training and community awareness.",
+    "servicesTitle": "Service Focus",
+    "services": [
+      { "title": "Intervention Programmes", "desc": "Structured activities for the development of autistic children based on individual needs." },
+      { "title": "Family Support", "desc": "Guidance and support spaces for parents and caregivers of autistic children." },
+      { "title": "Islamic Approach", "desc": "Learning worship, character and good values adapted to the needs of autistic children." },
+      { "title": "Community Awareness", "desc": "Advocacy and training programmes to help society better understand autism." }
+    ],
+    "visitTitle": "Contact & Enquiries",
+    "visitText": "For enquiries about services, registration or visits to the MAIWP Autism Centre, please contact us.",
+    "visitCta": "Contact Us"
+  },
+  "news": {
+    "title": "News & Activities",
+    "lead": "Follow the latest updates on PANDAI's programmes and activities.",
+    "empty": "No news at the moment. Please check back later.",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "backToNews": "Back to News"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "lead": "Meaningful moments from our programmes and activities.",
+    "empty": "No albums at the moment.",
+    "photos": "photos",
+    "viewAlbum": "View album"
+  },
+  "calendar": {
+    "title": "Activity Calendar",
+    "lead": "Upcoming programmes and activities.",
+    "upcomingTitle": "Upcoming",
+    "pastTitle": "Past Activities",
+    "empty": "No activities scheduled at the moment.",
+    "location": "Location",
+    "date": "Date"
+  },
+  "donate": {
+    "title": "Make a Donation",
+    "lead": "Every contribution helps us continuously care for special-needs children and their families.",
+    "bankTitle": "Banking Details",
+    "bankLabel": "Bank",
+    "accountLabel": "Account No.",
+    "holderLabel": "Account Name",
+    "copyBtn": "Copy Account No.",
+    "copied": "Copied!",
+    "noteTitle": "Please Note",
+    "noteText": "After making a donation, you may send your payment proof to our email for record purposes. May Allah reward your generosity.",
+    "usageTitle": "Where Your Donation Goes",
+    "usage": [
+      { "title": "Special-Needs Programmes", "desc": "Classes, activities and learning materials for special-needs children." },
+      { "title": "Family Support", "desc": "Guidance programmes and care visits to families in need." },
+      { "title": "Operations & Awareness", "desc": "Mobilising volunteers and community awareness programmes." }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "lead": "Questions about programmes, volunteering or the MAIWP Autism Centre? We are happy to help.",
+    "formTitle": "Send a Message",
+    "formName": "Full Name",
+    "formEmail": "Email Address",
+    "formPhone": "Phone Number (optional)",
+    "formSubject": "Subject",
+    "subjects": ["General Enquiry", "Programme Registration", "Volunteering", "MAIWP Autism Centre", "Donations"],
+    "formMessage": "Your Message",
+    "formSubmit": "Send Message",
+    "requiredNote": "Fields marked * are required.",
+    "infoTitle": "Contact Information",
+    "addressTitle": "Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "socialTitle": "Social Media"
+  },
+  "footer": {
+    "aboutText": "A registered Islamic NGO empowering special-needs children, families and communities through compassion, knowledge and da'wah.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact",
+    "followUs": "Follow Us",
+    "regLabel": "Registration No.",
+    "rights": "All rights reserved.",
+    "a11yNote": "This website is built to comply with WCAG 2.1 Level AA accessibility guidelines."
+  },
+  "misc": {
+    "learnMore": "Learn More",
+    "backHome": "Back to Home"
+  }
+}
