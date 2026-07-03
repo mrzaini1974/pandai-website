@@ -1,0 +1,85 @@
+---
+pageKey: about
+tSection: about
+pageSlug: tentang-kami
+---
+{% set s = t[lang].about %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="kicker">{{ site.regNo }}</p>
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+
+    <div class="card">
+      <h2>{{ s.missionTitle }}</h2>
+      <p class="lead">{{ s.missionText }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ s.issueTitle }}</h2>
+      <p class="lead">{{ s.issueLead }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for i in s.issues %}
+      <div class="card">
+        <span class="card-num" aria-hidden="true">{{ loop.index }}</span>
+        <h3>{{ i.title }}</h3>
+        <p>{{ i.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="lead mt-2">{{ s.issueOutro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ s.modelTitle }}</h2>
+      <p class="lead">{{ s.modelLead }}</p>
+    </div>
+    <div class="grid grid--4">
+      {% for m in s.model %}
+      <div class="card">
+        <h3>{{ m.name }}</h3>
+        <p>{{ m.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ s.valuesTitle }}</h2>
+    </div>
+    <div class="values-strip">
+      {% for v in t[lang].home.values %}
+      <div class="value-item">
+        <h3>{{ v.name }}</h3>
+        <p>{{ v.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="lead mt-2 text-center">{{ s.valuesOutro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="card">
+      <h2>{{ s.regTitle }}</h2>
+      <p><strong>{{ s.regLabel }}:</strong> {{ site.regNo }}<br>
+      {{ s.regDate }}<br>
+      {{ s.regCategory }}</p>
+    </div>
+  </div>
+</section>

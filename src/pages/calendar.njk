@@ -1,0 +1,63 @@
+---
+pageKey: calendar
+tSection: calendar
+pageSlug: kalendar
+---
+{% set s = t[lang].calendar %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+
+    <h2>{{ s.upcomingTitle }}</h2>
+    {% set upcomingEvents = collections.events | upcoming %}
+    {% if upcomingEvents.length %}
+    <div class="grid" style="margin-bottom:2.5rem">
+      {% for ev in upcomingEvents %}
+      {% set evTitle = ev.data["title_" + lang] or ev.data.title_ms %}
+      {% set evLoc = ev.data["location_" + lang] or ev.data.location_ms %}
+      <div class="event-row">
+        <p class="event-date" aria-hidden="true">
+          <span class="d">{{ ev.data.eventDate | dateDay }}</span>
+          <span class="m">{{ ev.data.eventDate | dateMon(lang) }}</span>
+        </p>
+        <div>
+          <h3>{{ evTitle }}</h3>
+          <p class="post-meta">
+            <strong>{{ s.date }}:</strong> <time datetime="{{ ev.data.eventDate | dateISO }}">{{ ev.data.eventDate | dateDisplay(lang) }}</time><br>
+            <strong>{{ s.location }}:</strong> {{ evLoc }}
+          </p>
+          {% if ev.data["desc_" + lang] or ev.data.desc_ms %}<p>{{ ev.data["desc_" + lang] or ev.data.desc_ms }}</p>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>{{ s.empty }}</p>
+    {% endif %}
+
+    <h2>{{ s.pastTitle }}</h2>
+    {% set pastEvents = collections.events | past %}
+    {% if pastEvents.length %}
+    <div class="grid">
+      {% for ev in pastEvents | limit(6) %}
+      {% set evTitle = ev.data["title_" + lang] or ev.data.title_ms %}
+      {% set evLoc = ev.data["location_" + lang] or ev.data.location_ms %}
+      <div class="event-row">
+        <div>
+          <h3>{{ evTitle }}</h3>
+          <p class="post-meta">
+            <time datetime="{{ ev.data.eventDate | dateISO }}">{{ ev.data.eventDate | dateDisplay(lang) }}</time> — {{ evLoc }}
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>{{ s.empty }}</p>
+    {% endif %}
+  </div>
+</section>

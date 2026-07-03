@@ -1,0 +1,37 @@
+---
+pageKey: gallery
+tSection: gallery
+pageSlug: galeri
+---
+{% set s = t[lang].gallery %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+
+    {% if collections.galeri.length %}
+    <div class="album-grid">
+      {% for album in collections.galeri %}
+      {% set albumTitle = album.data["title_" + lang] or album.data.title %}
+      <article class="post-card album-card">
+        {% if album.data.cover %}
+        <a href="{{ base }}{{ slugs.gallery }}/{{ album.fileSlug }}/">
+          <img src="{{ album.data.cover }}" alt="{{ albumTitle }}" loading="lazy">
+        </a>
+        {% endif %}
+        <div class="post-card-body">
+          <time datetime="{{ album.date | dateISO }}">{{ album.date | dateDisplay(lang) }}</time>
+          <h2><a href="{{ base }}{{ slugs.gallery }}/{{ album.fileSlug }}/">{{ albumTitle }}</a></h2>
+          <p class="post-meta">{{ album.data.images.length }} {{ s.photos }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="lead">{{ s.empty }}</p>
+    {% endif %}
+  </div>
+</section>

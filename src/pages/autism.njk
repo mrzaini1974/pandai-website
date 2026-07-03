@@ -1,0 +1,56 @@
+---
+pageKey: autism
+tSection: autism
+pageSlug: pusat-autisme-maiwp
+---
+{% set s = t[lang].autism %}
+
+<section class="hero">
+  <div class="container">
+    <p class="kicker">PANDAI × MAIWP</p>
+    <h1>{{ s.title }}</h1>
+    <p class="hero-lead">{{ s.lead }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2">
+      <div class="card">
+        <h2>{{ s.aboutTitle }}</h2>
+        <p>{{ s.aboutText }}</p>
+      </div>
+      <div class="card">
+        <h2>{{ s.roleTitle }}</h2>
+        <p>{{ s.roleText }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ s.servicesTitle }}</h2>
+    </div>
+    <div class="grid grid--4">
+      {% for sv in s.services %}
+      <div class="card">
+        <span class="card-num" aria-hidden="true">{{ loop.index }}</span>
+        <h3>{{ sv.title }}</h3>
+        <p>{{ sv.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>{{ s.visitTitle }}</h2>
+      <p>{{ s.visitText }}</p>
+      <p class="mt-2"><a class="btn btn--gold" href="{{ base }}{{ slugs.contact }}/">{{ s.visitCta }}</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+---
+pageKey: contact
+tSection: contact
+pageSlug: hubungi
+---
+{% set s = t[lang].contact %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="card card--plain">
+        <h2>{{ s.formTitle }}</h2>
+        <p class="required-note">{{ s.requiredNote }}</p>
+        <form class="form-grid" name="hubungi" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="hubungi">
+          <p class="visually-hidden">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+
+          <div class="field">
+            <label for="f-name">{{ s.formName }} <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-name" name="nama" type="text" required autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="f-email">{{ s.formEmail }} <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="emel" type="email" required autocomplete="email">
+          </div>
+
+          <div class="field">
+            <label for="f-phone">{{ s.formPhone }}</label>
+            <input id="f-phone" name="telefon" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="f-subject">{{ s.formSubject }} <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-subject" name="perkara" required>
+              {% for opt in s.subjects %}
+              <option value="{{ opt }}">{{ opt }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-message">{{ s.formMessage }} <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-message" name="mesej" rows="6" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn--navy">{{ s.formSubmit }}</button>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>{{ s.infoTitle }}</h2>
+          <ul class="contact-list">
+            <li><strong>{{ s.addressTitle }}</strong> {{ site.address }}</li>
+            <li><strong>{{ s.phoneTitle }}</strong> <a href="tel:{{ site.phoneIntl }}">{{ site.phone }}</a></li>
+            <li><strong>{{ s.emailTitle }}</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li>
+              <strong>{{ s.socialTitle }}</strong>
+              <a href="{{ site.facebook }}" rel="noopener">Facebook</a> ·
+              <a href="{{ site.instagram }}" rel="noopener">Instagram</a> ·
+              <a href="{{ site.threads }}" rel="noopener">Threads</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

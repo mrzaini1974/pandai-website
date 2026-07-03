@@ -1,0 +1,55 @@
+---
+pageKey: donate
+tSection: donate
+pageSlug: derma
+---
+{% set s = t[lang].donate %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="bank-box">
+        <h2>{{ s.bankTitle }}</h2>
+        <dl>
+          <dt>{{ s.bankLabel }}</dt>
+          <dd>{{ site.bankName }}</dd>
+          <dt>{{ s.accountLabel }}</dt>
+          <dd><span class="bank-account">{{ site.bankAccount }}</span></dd>
+          <dt>{{ s.holderLabel }}</dt>
+          <dd>{{ site.bankHolder }}</dd>
+        </dl>
+        <button id="copy-account" class="btn btn--navy" data-account="{{ site.bankAccount | replace(' ', '') }}" data-copied-label="{{ s.copied }}">
+          {{ s.copyBtn }}
+        </button>
+        <span id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+
+      <div class="card card--plain">
+        <h2>{{ s.noteTitle }}</h2>
+        <p>{{ s.noteText }}</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>{{ s.usageTitle }}</h2>
+    </div>
+    <div class="grid grid--3">
+      {% for u in s.usage %}
+      <div class="card">
+        <h3>{{ u.title }}</h3>
+        <p>{{ u.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

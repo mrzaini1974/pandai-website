@@ -1,0 +1,34 @@
+---
+pageKey: programs
+tSection: programs
+pageSlug: program
+---
+{% set s = t[lang].programs %}
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h1>{{ s.title }}</h1>
+      <p class="lead">{{ s.lead }}</p>
+    </div>
+    <div class="grid grid--3">
+      {% for p in s.items %}
+      <div class="card">
+        <h2>{{ p.title }}</h2>
+        <p>{{ p.desc }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="lead mt-2">{{ s.outro }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>{{ s.joinTitle }}</h2>
+      <p>{{ s.joinText }}</p>
+      <p class="mt-2"><a class="btn btn--gold" href="{{ base }}{{ slugs.contact }}/">{{ s.joinCta }}</a></p>
+    </div>
+  </div>
+</section>
