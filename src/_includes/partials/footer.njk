@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>{{ site.fullName }}</h2>
+        <p>{{ t[lang].footer.aboutText }}</p>
+        <p><strong>{{ t[lang].footer.regLabel }}:</strong> {{ site.regNo }}</p>
+      </div>
+      <nav aria-label="{{ t[lang].footer.quickLinks }}">
+        <h2>{{ t[lang].footer.quickLinks }}</h2>
+        <ul>
+          <li><a href="{{ base }}{{ slugs.about }}/">{{ t[lang].nav.about }}</a></li>
+          <li><a href="{{ base }}{{ slugs.programs }}/">{{ t[lang].nav.programs }}</a></li>
+          <li><a href="{{ base }}{{ slugs.autism }}/">{{ t[lang].nav.autism }}</a></li>
+          <li><a href="{{ base }}{{ slugs.donate }}/">{{ t[lang].nav.donate }}</a></li>
+          <li><a href="{{ base }}{{ slugs.contact }}/">{{ t[lang].nav.contact }}</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>{{ t[lang].footer.contactTitle }}</h2>
+        <ul>
+          <li>{{ site.address }}</li>
+          <li><a href="tel:{{ site.phoneIntl }}">{{ site.phone }}</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>{{ t[lang].footer.followUs }}</h2>
+        <ul>
+          <li><a href="{{ site.facebook }}" rel="noopener">Facebook</a></li>
+          <li><a href="{{ site.instagram }}" rel="noopener">Instagram</a></li>
+          <li><a href="{{ site.threads }}" rel="noopener">Threads</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2018–2026 {{ site.fullName }}. {{ t[lang].footer.rights }}</p>
+      <p>{{ t[lang].footer.a11yNote }}</p>
+    </div>
+  </div>
+</footer>

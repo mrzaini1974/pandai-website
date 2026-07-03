@@ -1,0 +1,46 @@
+<button id="a11y-fab" class="a11y-fab" aria-expanded="false" aria-controls="a11y-panel" aria-label="{{ t[lang].a11y.widgetOpen }}">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+    <path d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm9 5.5c.3 1-.4 1.5-1.2 1.7l-4.3.9v2.4l1.9 6.6c.3.9-.2 1.6-1 1.9-.9.2-1.6-.3-1.9-1.1L12 14.6l-2.5 5.3c-.3.8-1 1.3-1.9 1.1-.8-.3-1.3-1-1-1.9l1.9-6.6V10l-4.3-.9C3.4 9 2.7 8.5 3 7.5c.2-.8 1-1.2 1.8-1L9.9 7.6h4.2l5.1-1.1c.8-.2 1.6.2 1.8 1z"/>
+  </svg>
+</button>
+
+<div id="a11y-panel" class="a11y-panel" role="dialog" aria-modal="false" aria-labelledby="a11y-title" hidden>
+  <h2 id="a11y-title">
+    {{ t[lang].a11y.widgetTitle }}
+    <button id="a11y-close" class="a11y-close" aria-label="{{ t[lang].a11y.close }}">✕</button>
+  </h2>
+
+  <div class="a11y-group">
+    <div class="a11y-row">
+      <span id="a11y-font-label">{{ t[lang].a11y.fontSize }}</span>
+      <div class="a11y-size" role="group" aria-labelledby="a11y-font-label">
+        <button id="a11y-font-dec" aria-label="{{ t[lang].a11y.decrease }}">A−</button>
+        <span id="a11y-font-display" aria-live="polite">100%</span>
+        <button id="a11y-font-inc" aria-label="{{ t[lang].a11y.increase }}">A+</button>
+      </div>
+    </div>
+
+    <button class="a11y-toggle" data-a11y-toggle="contrast" aria-pressed="false">
+      {{ t[lang].a11y.highContrast }}
+    </button>
+    <button class="a11y-toggle" data-a11y-toggle="dyslexia" aria-pressed="false">
+      {{ t[lang].a11y.dyslexiaFont }}
+    </button>
+    <button class="a11y-toggle" data-a11y-toggle="links" aria-pressed="false">
+      {{ t[lang].a11y.highlightLinks }}
+    </button>
+    <button class="a11y-toggle" data-a11y-toggle="ruler" aria-pressed="false">
+      {{ t[lang].a11y.readingGuide }}
+    </button>
+    <button class="a11y-toggle" data-a11y-toggle="motion" aria-pressed="false">
+      {{ t[lang].a11y.pauseMotion }}
+    </button>
+    <button class="a11y-toggle" data-a11y-toggle="spacing" aria-pressed="false">
+      {{ t[lang].a11y.textSpacing }}
+    </button>
+
+    <button id="a11y-reset" class="a11y-reset">{{ t[lang].a11y.resetAll }}</button>
+  </div>
+</div>
+
+<div id="a11y-ruler" aria-hidden="true"></div>

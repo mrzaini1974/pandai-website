@@ -1,0 +1,46 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ base }}">
+      <svg viewBox="0 0 48 48" role="img" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="22" fill="#14264e"/>
+        <path d="M24 10c-6 0-10 4.5-10 10 0 7 6 10.5 10 17 4-6.5 10-10 10-17 0-5.5-4-10-10-10zm0 6a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9z" fill="#c9a44c"/>
+      </svg>
+      <span>
+        <span class="brand-name">PANDAI</span>
+        <span class="brand-tag">{{ t[lang].meta.tagline }}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+      {{ t[lang].nav.menu }}
+    </button>
+
+    <nav id="main-nav" class="main-nav" aria-label="{{ t[lang].nav.mainNav }}">
+      <ul>
+        <li><a href="{{ base }}" {% if pageKey == "home" %}aria-current="page"{% endif %}>{{ t[lang].nav.home }}</a></li>
+        <li><a href="{{ base }}{{ slugs.about }}/" {% if pageKey == "about" %}aria-current="page"{% endif %}>{{ t[lang].nav.about }}</a></li>
+        <li><a href="{{ base }}{{ slugs.programs }}/" {% if pageKey == "programs" %}aria-current="page"{% endif %}>{{ t[lang].nav.programs }}</a></li>
+        <li><a href="{{ base }}{{ slugs.autism }}/" {% if pageKey == "autism" %}aria-current="page"{% endif %}>{{ t[lang].nav.autism }}</a></li>
+        <li><a href="{{ base }}{{ slugs.news }}/" {% if pageKey == "news" %}aria-current="page"{% endif %}>{{ t[lang].nav.news }}</a></li>
+        <li><a href="{{ base }}{{ slugs.gallery }}/" {% if pageKey == "gallery" %}aria-current="page"{% endif %}>{{ t[lang].nav.gallery }}</a></li>
+        <li><a href="{{ base }}{{ slugs.calendar }}/" {% if pageKey == "calendar" %}aria-current="page"{% endif %}>{{ t[lang].nav.calendar }}</a></li>
+        <li><a href="{{ base }}{{ slugs.donate }}/" {% if pageKey == "donate" %}aria-current="page"{% endif %}>{{ t[lang].nav.donate }}</a></li>
+        <li><a href="{{ base }}{{ slugs.contact }}/" {% if pageKey == "contact" %}aria-current="page"{% endif %}>{{ t[lang].nav.contact }}</a></li>
+      </ul>
+    </nav>
+
+    <nav aria-label="{{ t[lang].a11y.langMenu }}">
+      <ul class="lang-switch">
+        {%- for l in site.languages %}
+        <li>
+          {%- if l.code == lang %}
+          <span aria-current="true" lang="{{ l.code }}">{{ l.code | upper }}</span>
+          {%- else %}
+          <a href="{{ paths[l.code] }}" lang="{{ l.code }}" hreflang="{{ l.code }}">{{ l.code | upper }}<span class="visually-hidden"> — {{ l.label }}</span></a>
+          {%- endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
