@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+pageKey: gallery
+lang: en
+dirAttr: ltr
+base: /en/
+pagination:
+  data: collections.galeri
+  size: 1
+  alias: album
+permalink: "/en/galeri/{{ album.fileSlug }}/index.html"
+eleventyComputed:
+  title: '{{ album.data["title_en"] or album.data.title }}'
+  paths:
+    ms: "/galeri/{{ album.fileSlug }}/"
+    en: "/en/galeri/{{ album.fileSlug }}/"
+    ar: "/ar/galeri/{{ album.fileSlug }}/"
+---
+{% set albumTitle = album.data["title_en"] or album.data.title %}
+<section class="section">
+  <div class="container">
+    <p><a href="{{ base }}{{ slugs.gallery }}/">← {{ t[lang].gallery.title }}</a></p>
+    <div class="section-head">
+      <h1>{{ albumTitle }}</h1>
+      <p class="post-meta"><time datetime="{{ album.date | dateISO }}">{{ album.date | dateDisplay(lang) }}</time></p>
+      {% if album.data["desc_en"] %}<p class="lead">{{ album.data["desc_en"] }}</p>{% endif %}
+    </div>
+    <div class="gallery-grid">
+      {% for img in album.data.images %}
+      <img src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy">
+      {% endfor %}
+    </div>
+  </div>
+</section>
