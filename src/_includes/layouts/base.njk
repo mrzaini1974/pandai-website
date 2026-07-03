@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" dir="{{ dirAttr }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} — {% endif %}{{ site.name }} | {{ t[lang].meta.tagline }}</title>
+  <meta name="description" content="{{ desc or t[lang].meta.desc }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- for l in site.languages %}
+  <link rel="alternate" hreflang="{{ l.code }}" href="{{ site.url }}{{ paths[l.code] }}">
+  {%- endfor %}
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Amiri:wght@700&family=Noto+Naskh+Arabic:wght@400;600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <meta property="og:title" content="{% if title %}{{ title }} — {% endif %}{{ site.fullName }}">
+  <meta property="og:description" content="{{ desc or t[lang].meta.desc }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ t[lang].a11y.skipLink }}</a>
+
+  {% include "partials/header.njk" %}
+
+  <main id="main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+  {% include "partials/a11y.njk" %}
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
