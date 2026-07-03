@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Bahasa antara muka admin
+locale: ms
+
+media_folder: "src/uploads"
+public_folder: "/uploads"
+
+site_url: https://pandai.org.my
+display_url: https://pandai.org.my
+logo_url: /assets/img/favicon.svg
+
+collections:
+  - name: berita_ms
+    label: "Berita (Bahasa Melayu)"
+    label_singular: "Berita BM"
+    folder: "src/berita/ms"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tajuk", name: "title", widget: "string" }
+      - { label: "Tarikh", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Ringkasan", name: "excerpt", widget: "text", hint: "1-2 ayat ringkas untuk paparan senarai berita." }
+      - { label: "Gambar Utama", name: "image", widget: "image", required: false }
+      - { label: "Keterangan Gambar (alt text)", name: "imageAlt", widget: "string", required: false, hint: "PENTING untuk kebolehcapaian: terangkan apa yang ada dalam gambar." }
+      - { label: "Kandungan", name: "body", widget: "markdown" }
+
+  - name: berita_en
+    label: "Berita (English)"
+    label_singular: "News EN"
+    folder: "src/berita/en"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Main Image", name: "image", widget: "image", required: false }
+      - { label: "Image description (alt text)", name: "imageAlt", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: berita_ar
+    label: "Berita (Arabic)"
+    label_singular: "News AR"
+    folder: "src/berita/ar"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "العنوان (Tajuk)", name: "title", widget: "string" }
+      - { label: "التاريخ (Tarikh)", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "الملخص (Ringkasan)", name: "excerpt", widget: "text" }
+      - { label: "الصورة (Gambar)", name: "image", widget: "image", required: false }
+      - { label: "وصف الصورة (alt text)", name: "imageAlt", widget: "string", required: false }
+      - { label: "المحتوى (Kandungan)", name: "body", widget: "markdown" }
+
+  - name: galeri
+    label: "Galeri"
+    label_singular: "Album"
+    folder: "src/galeri"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tajuk Album (BM)", name: "title", widget: "string" }
+      - { label: "Album Title (EN)", name: "title_en", widget: "string", required: false }
+      - { label: "عنوان الألبوم (AR)", name: "title_ar", widget: "string", required: false }
+      - { label: "Tarikh", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Gambar Muka Album", name: "cover", widget: "image" }
+      - { label: "Keterangan (BM)", name: "desc_ms", widget: "text", required: false }
+      - { label: "Description (EN)", name: "desc_en", widget: "text", required: false }
+      - { label: "الوصف (AR)", name: "desc_ar", widget: "text", required: false }
+      - label: "Gambar-gambar"
+        name: "images"
+        widget: "list"
+        fields:
+          - { label: "Gambar", name: "src", widget: "image" }
+          - { label: "Keterangan gambar (alt text)", name: "alt", widget: "string", hint: "WAJIB untuk kebolehcapaian: terangkan apa yang berlaku dalam gambar ini." }
+
+  - name: events
+    label: "Kalendar Aktiviti"
+    label_singular: "Aktiviti"
+    folder: "src/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nama Aktiviti (BM)", name: "title_ms", widget: "string" }
+      - { label: "Activity Name (EN)", name: "title_en", widget: "string", required: false }
+      - { label: "اسم النشاط (AR)", name: "title_ar", widget: "string", required: false }
+      - { label: "Tarikh Aktiviti", name: "eventDate", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Lokasi (BM)", name: "location_ms", widget: "string" }
+      - { label: "Location (EN)", name: "location_en", widget: "string", required: false }
+      - { label: "الموقع (AR)", name: "location_ar", widget: "string", required: false }
+      - { label: "Keterangan (BM)", name: "desc_ms", widget: "text", required: false }
+      - { label: "Description (EN)", name: "desc_en", widget: "text", required: false }
+      - { label: "الوصف (AR)", name: "desc_ar", widget: "text", required: false }
