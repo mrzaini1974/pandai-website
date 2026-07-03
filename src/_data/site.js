@@ -1,0 +1,22 @@
+export default {
+  name: "PANDAI",
+  fullName: "Pertubuhan Amal & Da'wah Anak Istimewa",
+  regNo: "PPM-026-14-26062018",
+  url: "https://pandai.org.my",
+  email: "info@pandai.org.my",
+  emailMedia: "medsospandai@gmail.com",
+  phone: "013-208 5818",
+  phoneIntl: "+60132085818",
+  address: "d/a Surau Ar Rayyan, Taman Bullion Mewah, 68100 Batu Caves, Selangor",
+  bankName: "Bank Islam",
+  bankAccount: "5626 7427 1419",
+  bankHolder: "Pertubuhan Amal & Dakwah Anak Istimewa (PANDAI)",
+  facebook: "https://www.facebook.com/pandai2018",
+  instagram: "https://www.instagram.com/pandai2018",
+  threads: "https://www.threads.net/@pandai2018",
+  languages: [
+    { code: "ms", label: "Bahasa Melayu", dir: "ltr", base: "/" },
+    { code: "en", label: "English", dir: "ltr", base: "/en/" },
+    { code: "ar", label: "العربية", dir: "rtl", base: "/ar/" },
+  ],
+};
