@@ -207,7 +207,8 @@ a:focus-visible {
   font-weight: 700;
 }
 
-.brand svg {
+.brand svg,
+.brand img {
   height: 2.4rem;
   width: auto;
   flex-shrink: 0;
